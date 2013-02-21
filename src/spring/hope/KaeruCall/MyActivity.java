@@ -33,6 +33,8 @@ public class MyActivity extends Activity {
 
                 Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + tellNumber));
                 startActivity(intent);
+
+                finish();
             }
         });
 
@@ -45,6 +47,8 @@ public class MyActivity extends Activity {
 
                 Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:" + mailAddress));
                 startActivity(intent);
+
+                finish();
             }
         });
 
